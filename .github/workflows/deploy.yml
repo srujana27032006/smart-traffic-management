@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
@@ -34,25 +34,7 @@ jobs:
         run: npm install
 
       - name: Build client
-        run: |
-          npx vite build > build.log 2>&1
-        continue-on-error: true
-
-      - name: Commit build log
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add build.log
-          git commit -m "add build log [skip ci]" || true
-          git push origin main
-
-      - name: Check build success
-        run: |
-          if [ ! -d "./dist/public" ]; then
-            echo "Build failed!"
-            cat build.log
-            exit 1
-          fi
+        run: npx vite build
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
