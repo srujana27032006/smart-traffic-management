@@ -1,11 +1,14 @@
 [36mvite v7.3.6 [32mbuilding client environment for production...[36m[39m
 transforming...
-[32m✓[39m 1316 modules transformed.
-[31m✗[39m Build failed in 1.84s
-[31merror during build:
-[31mCould not resolve "./ui/Badge" from "client/src/components/LaneCard.tsx"[31m
-file: [36m/home/runner/work/smart-traffic-management/smart-traffic-management/client/src/components/LaneCard.tsx[31m
-    at getRollupError (file:///home/runner/work/smart-traffic-management/smart-traffic-management/node_modules/rollup/dist/es/shared/parseAst.js:317:41)
-    at error (file:///home/runner/work/smart-traffic-management/smart-traffic-management/node_modules/rollup/dist/es/shared/parseAst.js:313:42)
-    at ModuleLoader.handleInvalidResolvedId (file:///home/runner/work/smart-traffic-management/smart-traffic-management/node_modules/rollup/dist/es/shared/node-entry.js:21930:24)
-    at file:///home/runner/work/smart-traffic-management/smart-traffic-management/node_modules/rollup/dist/es/shared/node-entry.js:21890:26[39m
+[32m✓[39m 2760 modules transformed.
+rendering chunks...
+computing gzip size...
+[2m../dist/public/[22m[32mindex.html                 [39m[1m[2m  2.06 kB[22m[1m[22m[2m │ gzip:   0.78 kB[22m
+[2m../dist/public/[22m[2massets/[22m[35mindex-8I5jjVve.css  [39m[1m[2m 94.20 kB[22m[1m[22m[2m │ gzip:  15.64 kB[22m
+[2m../dist/public/[22m[2massets/[22m[36mindex-BYH8qDKz.js   [39m[1m[33m909.27 kB[39m[22m[2m │ gzip: 268.19 kB[22m
+[33m
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+[32m✓ built in 5.33s[39m
