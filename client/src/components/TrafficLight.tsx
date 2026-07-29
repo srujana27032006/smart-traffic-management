@@ -1,6 +1,6 @@
 import React from 'react';
 import { LightState } from '@/hooks/use-traffic-simulation';
-import { cn } from '@/components/ui/Badge';
+import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
 
 interface TrafficLightProps {

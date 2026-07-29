@@ -2,7 +2,7 @@ import React from 'react';
 import { useSettings, useUpdateSettings } from '@/hooks/use-settings';
 import { LaneState } from '@/hooks/use-traffic-simulation';
 import { Settings2, Zap, Hand, BarChart3, AlertTriangle, Truck } from 'lucide-react';
-import { cn } from './ui/Badge';
+import { cn } from '@/lib/utils';
 
 export function AdminPanel({ lanes }: { lanes: LaneState[] }) {
   const { data: settings, isLoading } = useSettings();

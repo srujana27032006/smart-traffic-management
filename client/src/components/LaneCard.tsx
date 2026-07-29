@@ -1,7 +1,8 @@
 import React from 'react';
 import { LaneState } from '@/hooks/use-traffic-simulation';
 import { TrafficLight } from './TrafficLight';
-import { Badge, cn } from './ui/Badge';
+import { Badge } from './ui/badge';
+import { cn } from '@/lib/utils';
 import { Users, Car, TrendingUp } from 'lucide-react';
 import { motion } from 'framer-motion';
 
